@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b821f2e778482fd08d9be20715e7609f",
+    "content-hash": "9f0b000ef839a43a1e5e00824f4c5916",
     "packages": [
         {
             "name": "api-clients/middleware",
-            "version": "3.0.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-api-clients/middleware.git",
-                "reference": "d7a0a9414aba68d001ba16f51570732eb8b57b0d"
+                "reference": "328f8e17bbf5a51107de0d1b5987c04757f66499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-api-clients/middleware/zipball/d7a0a9414aba68d001ba16f51570732eb8b57b0d",
-                "reference": "d7a0a9414aba68d001ba16f51570732eb8b57b0d",
+                "url": "https://api.github.com/repos/php-api-clients/middleware/zipball/328f8e17bbf5a51107de0d1b5987c04757f66499",
+                "reference": "328f8e17bbf5a51107de0d1b5987c04757f66499",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 }
             ],
             "description": "Request middleware",
-            "time": "2017-06-27T19:29:34+00:00"
+            "time": "2017-06-28T19:24:19+00:00"
         },
         {
             "name": "doctrine/annotations",
