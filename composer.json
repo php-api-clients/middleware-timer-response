@@ -13,7 +13,7 @@
         "api-clients/middleware": "^4.0"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^4.1",
+        "api-clients/test-utilities": "^5.1",
         "ringcentral/psr7": "^1.2"
     },
     "autoload": {
