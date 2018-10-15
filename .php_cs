@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use ApiClients\Tools\TestUtilities\PhpCsFixerConfig;
+use ApiClients\Tools\CsFixerConfig\PhpCsFixerConfig;
 use PhpCsFixer\Config;
 
 return (function (): Config
@@ -12,9 +12,9 @@ return (function (): Config
 
     return PhpCsFixerConfig::create()
         ->setFinder(
-        PhpCsFixer\Finder::create()
-            ->in($paths)
-            ->append($paths)
+            PhpCsFixer\Finder::create()
+                ->in($paths)
+                ->append($paths)
         )
         ->setUsingCache(false)
     ;
