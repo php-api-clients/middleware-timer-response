@@ -37,7 +37,7 @@ final class Middleware implements MiddlewareInterface
         string $transactionId,
         array $options = []
     ): CancellablePromiseInterface {
-        $this->times[$transactionId] = microtime(true);
+        $this->times[$transactionId] = \microtime(true);
 
         return resolve($request);
     }
@@ -57,7 +57,7 @@ final class Middleware implements MiddlewareInterface
         string $transactionId,
         array $options = []
     ): CancellablePromiseInterface {
-        $time = microtime(true) - $this->times[$transactionId];
+        $time = \microtime(true) - $this->times[$transactionId];
         unset($this->times[$transactionId]);
 
         return resolve($response->withAddedHeader(self::HEADER, (string)$time));

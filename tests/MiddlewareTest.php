@@ -9,9 +9,12 @@ use RingCentral\Psr7\Request;
 use RingCentral\Psr7\Response;
 use function Clue\React\Block\await;
 
+/**
+ * @internal
+ */
 final class MiddlewareTest extends TestCase
 {
-    public function testPost()
+    public function testPost(): void
     {
         $idA = 'Abc';
         $idB = 'aBc';
@@ -21,7 +24,7 @@ final class MiddlewareTest extends TestCase
         $middleware->pre(new Request('GET', 'https://example.com/'), $idB, []);
         $responseObject = await($middleware->post($response, $idA, []), Factory::create());
         self::assertTrue((float)$responseObject->getHeaderLine(Middleware::HEADER) < 1);
-        sleep(1);
+        \sleep(1);
         $responseObject = await($middleware->post($response, $idB, []), Factory::create());
         self::assertTrue((float)$responseObject->getHeaderLine(Middleware::HEADER) > 1);
     }
