@@ -8,8 +8,8 @@ use ApiClients\Foundation\Middleware\MiddlewareInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use React\Promise\CancellablePromiseInterface;
-use Throwable;
 use function React\Promise\resolve;
+use Throwable;
 
 final class Middleware implements MiddlewareInterface
 {

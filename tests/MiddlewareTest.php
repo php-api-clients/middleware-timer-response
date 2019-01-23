@@ -4,10 +4,10 @@ namespace ApiClients\Tests\Middleware\Timer\Response;
 
 use ApiClients\Middleware\Timer\Response\Middleware;
 use ApiClients\Tools\TestUtilities\TestCase;
+use function Clue\React\Block\await;
 use React\EventLoop\Factory;
 use RingCentral\Psr7\Request;
 use RingCentral\Psr7\Response;
-use function Clue\React\Block\await;
 
 /**
  * @internal
